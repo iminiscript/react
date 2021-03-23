@@ -3,19 +3,29 @@ import productData from './productData';
 
 
 function product() {
-    const productInfo = productData.map(function (pro) {
+    // Simple Approach 
+    // const productInfoSimple = productData.map(function (pro) {
+    //     return (
+    //         <ProductProps 
+    //             name={pro.name}
+    //             price={pro.price}
+    //             category={pro.category}
+    //          />
+    //     )
+    // })
+
+    // Object Based approach 
+    const productInfoObject = productData.map(function (pro) {
         return (
-            <ProductProps 
-                name={pro.name}
-                price={pro.price}
-                category={pro.category}
+            <ProductProps key={pro.id} produt={pro}
              />
         )
     })
 
     return (
         <div>
-            { productInfo }
+            {/* { productInfoSimple } */}
+            { productInfoObject }
         </div>
     
     )

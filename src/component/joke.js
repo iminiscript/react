@@ -12,11 +12,11 @@ function JokeFun() {
     })
     console.log(douuble);
 
-    const mino = data.map(jo => <JokeProps ques={jo.ques} punch={jo.punch} /> )
+    const mino = data.map(jo => <JokeProps key={jo.id} ques={jo.ques} punch={jo.punch} /> )
 
     const second = data.map(function (i) {
         return (
-            <JokeProps ques={i.ques} punch={i.punch} />
+            <JokeProps key={i.id} ques={i.ques} punch={i.punch} />
         )
     })
         
