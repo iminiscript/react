@@ -14,7 +14,7 @@ function App() {
       <Product />
       <JokeFun />
       <Contact />
-      {/* <Header /> */}
+      <Header />
       <Body />
       <Footer />
     </div>
